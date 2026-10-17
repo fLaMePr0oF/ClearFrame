@@ -8,7 +8,7 @@ description = "Offline adjustable image processing with iterative previews"
 [dependencies]
 eframe = { version = "=0.33.3", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
 image = { version = "=0.25.10", default-features = false, features = ["png", "jpeg", "bmp"] }
-rfd = "=0.15.4"
+rfd = "=0.17.2"
 
 [profile.release]
 lto = "thin"
