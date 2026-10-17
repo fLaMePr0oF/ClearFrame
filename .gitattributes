@@ -1,0 +1,11 @@
+* text=auto
+*.rs text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+*.bat text eol=crlf
+*.png binary
+
+# Preserve imported QA evidence and historical snapshots byte-for-byte.
+QA/** -text
+history/** -text

@@ -1,0 +1,13 @@
+**/target/
+**/target-*/
+/dist/
+*.exe
+*.pdb
+*.zip
+*.log
+.vs/
+.idea/
+.DS_Store
+.env
+.env.*
+!.env.example

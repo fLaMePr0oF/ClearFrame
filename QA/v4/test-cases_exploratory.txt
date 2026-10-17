@@ -1,0 +1,71 @@
+Tone	Noise	Recap	Frame	Pass/fail	Score	Notes
+0	0	0	0	fail		99%
+35	35	50	25	fail		99%
+100	0	0	25	fail		99%
+0	100	0	25	fail		99%
+0	0	100	25	fail		99%
+100	100	0	25	fail		99%
+100	0	100	25	fail		99%
+0	100	100	25	pass		18%
+
+25	100	100	25	pass		14%
+50	100	100	25	pass		7%
+75	100	100	25	pass		6%
+76	100	100	25	pass		6%	Tone appears to have an effective range of 0-75
+							when Noise and Recap are high / 100%
+75	80	100	25	pass		9%
+100	80	100	25	pass		7%
+100	100	80	25	fail		99%
+100	100	90	25	pass		48%
+100	100	85	25	fail		99%
+100	100	89	25	fail		99%
+100	100	90	25	pass		99%	(re-run, same score, result seems deterministic)
+100	100	91	25	pass		35%
+100	100	92	25	pass		32%
+100	100	93	25	pass		27%
+100	100	94	25	pass		23%
+100	100	99	25	pass		7%	Recap appears to have an effective range of 91-100 when
+							Tone and Noise are high / 100%
+75	80	90	25	fail		99%
+75	80	91	25	fail		99%
+75	80	95	25	pass		30%
+75	80	96	25	pass		23%
+75	80	92	25	fail		99%
+75	80	93	25	pass		49%	The effective range of Recap is reduced slightly by
+							by reducing Tone and/or Noise
+70	80	93	25	fail		99%
+74	80	93	25	fail		99%
+74	81	93	25	fail		99%
+74	85	93	25	pass		42%
+74	84	93	25	fail		99%	Score seems to range from 1-49 (pass) then
+							50+ is reported as 99% fail	
+
+40	100	100	25	pass		10%
+30	100	100	25	pass		11%
+
+
+
+
+	
+100	100	100	25	pass		6%
+100	90	100	25	pass		6%
+100	85	100	25	pass		6%
+100	80	100	25	pass		7%
+100	81	100	25	pass		7%
+100	82	100	25	pass		6%
+100	83	100	25	pass		6%
+100	70	100	25	pass		12%
+100	50	100	25	fail		99%
+100	60	100	25	pass		30%
+100	59	100	25	pass		39%
+100	58	100	25	pass		44%
+100	57	100	25	pass		45%
+100	56	100	25	pass		45%
+100	55	100	25	fail		99%	Noise appears to have an effective range of 56-83 when
+							Tone and Recap are high / 100%
+
+
+
+
+
+
