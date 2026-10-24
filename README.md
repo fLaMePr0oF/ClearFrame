@@ -1,6 +1,35 @@
 # CleanFrame
 
-Offline Windows image processing in Rust, hosted in the **ClearFrame** repository. Current application release: **v4.3** (Cargo package version `0.4.3`, retaining the existing version convention).
+**Local image processing for photographic effects and AI image detection experiments.**
+
+[**Try CleanFrame online →**](https://imagedisguiser.com/)
+
+CleanFrame adjusts tone and colour, photographic noise and texture, screen recapture effects, and framing. Use it to compare visual changes and investigate how image processing affects external AI image detection results.
+
+**CleanFrame** is the application name; **ClearFrame** is the name of this GitHub repository. This repository contains the offline Windows application written in Rust. The browser version is available at [ImageDisguiser.com](https://imagedisguiser.com/) and runs its processing locally using WebAssembly.
+
+Current application release: **v4.3** (Cargo package version `0.4.3`, retaining the existing version convention).
+
+[![CleanFrame web interface with input and output previews](https://imagedisguiser.com/cleanframe-social-preview.png)](https://imagedisguiser.com/)
+
+## Use CleanFrame in your browser
+
+Open [CleanFrame — AI Image Disguiser](https://imagedisguiser.com/) to use the web tool without installing the Windows application.
+
+1. Open or drag in a PNG, JPEG or BMP image, up to 25 megapixels.
+2. Adjust the four processing channels and select **Process**.
+3. Compare the Input and Output previews.
+4. Select **Save**, or **Accept as Input** to apply another processing pass.
+
+Image processing happens on your device; image files are not uploaded for processing. The interface supports English, Español, Français, Italiano, Deutsch and 中文. Original metadata is not copied into saved images.
+
+CleanFrame processes images; it does not provide an AI detection score. To test classification changes, compare original and processed files with an external detector. Results depend on the image, settings and detector, and no particular score is guaranteed.
+
+## Reproducible AI image detection testing
+
+For useful comparisons, keep an untouched original and record the image format, enabled channels, slider values, number of accepted passes, detector name and test date. Change one factor at a time where practical, and record repeated results rather than relying on a single score.
+
+The [QA documentation and recording template](QA/README.md) provide a starting point for contributing test observations. See the slider mappings below for the effective strengths behind the displayed percentages.
 
 ## Build and run
 
